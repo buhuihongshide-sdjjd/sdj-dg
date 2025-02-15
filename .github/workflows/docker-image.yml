@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - run: ./dk.sh
-    - run: docker rmi gen:latest
+    - run: docker rmi gen:latest -f
