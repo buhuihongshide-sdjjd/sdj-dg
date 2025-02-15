@@ -1,0 +1,7 @@
+cpp=main.cpp
+count=4
+time=1000
+data1.in data1.ans
+data2.in data2.ans
+data3.in data3.ans
+data4.in data4.ans
