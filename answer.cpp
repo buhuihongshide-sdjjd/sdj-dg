@@ -31,8 +31,8 @@ int main()
     const int n=10;
     for(int i=0;i<n;i++){
         char input[100],output[100];
-        sprintf(input,"ggame%d.in",i+1);
-        sprintf(output,"ggame%d.ans",i+1);
+        sprintf(input,"data%d.in",i+1);
+        sprintf(output,"data%d.ans",i+1);
         ifstream in(input);
         ofstream out(output);
         work(in,out);

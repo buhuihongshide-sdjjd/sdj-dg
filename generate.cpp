@@ -38,7 +38,7 @@ int main()
 	const int n=10;
 	for(int i=0;i<n;i++){
 		char input[100];
-		sprintf(input,"ggame%d.in",i+1);
+		sprintf(input,"data%d.in",i+1);
 		ofstream out(input);
 		reload();
 		work(out);
