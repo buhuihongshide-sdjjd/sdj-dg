@@ -14,6 +14,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Build the Docker image
     - run: ./dk.sh
     - run: docker rmi gen:latest
