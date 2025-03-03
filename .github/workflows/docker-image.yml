@@ -15,7 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - run: ./dk.sh
-    - run: docker rmi gen:latest -f
     - run: rm data.zip
 
   build-on-local:
@@ -24,5 +23,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - run: ./local
+    - run: ./local.sh
     - run: rm data.zip
