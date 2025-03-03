@@ -14,10 +14,10 @@ You can use the script to build and run the container(please ensure that you are
 ./dk.sh
 ```
 
-After the operation is completed, you will find an additional file named data.zip in your folder, which is the data file. The default name for the data is "data", which means that the input file is data<x>.in and the answer file is data<x>.ans, where x is a number. When the x of the input file matches the x of the answer file, it indicates that this is a corresponding set of data.
+Or if you want to run on your local computer, you can run 
 
-If you want to remove the image, you can run the following command
-
-```bash
-docker rmi gen:latest
 ```
+./local.sh
+```
+
+After the operation is completed, you will find an additional file named data.zip in your folder, which is the data file. The default name for the data is "data", which means that the input file is data<x>.in and the answer file is data<x>.ans, where x is a number. When the x of the input file matches the x of the answer file, it indicates that this is a corresponding set of data.

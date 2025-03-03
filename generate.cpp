@@ -18,24 +18,19 @@ int rd(int l,int r){
 	return ret;
 }
 void work(ofstream& cout){
-	int n=150+rd(0,50);
-	int m=rd(n+1,1e5);
-	cout<<n<<' '<<m<<'\n';
-	map<pair<int,int>,int> mp;
-	while(m--){
-		int s=rd(1,n);
-		int t=rd(1,n);
-		while(t==s) t=rd(1,n);
-		if(++mp[make_pair(min(s,t),max(s,t))]>5000){
-			m++;
-			continue;
-		}
-		cout<<s<<' '<<t<<' '<<rd(1,9999)<<'\n';
+	int n=1000,q=1e6;
+	cout<<n<<' '<<q<<'\n';
+	while(q--){
+		int x=rd(1,n);
+		int y=rd(1,n);
+		int mx=min(n-x+1,n-y+1);
+		int d=rd(1,mx);
+		cout<<x<<' '<<y<<' '<<d<<'\n';
 	}
 }
 int main()
 {
-	const int n=10;
+	const int n=5;
 	for(int i=0;i<n;i++){
 		char input[100];
 		sprintf(input,"data%d.in",i+1);

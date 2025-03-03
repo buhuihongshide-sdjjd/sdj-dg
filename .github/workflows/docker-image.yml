@@ -8,7 +8,7 @@ on:
 
 jobs:
 
-  build:
+  build-on-docker:
 
     runs-on: ubuntu-22.04
 
@@ -16,3 +16,13 @@ jobs:
     - uses: actions/checkout@v4
     - run: ./dk.sh
     - run: docker rmi gen:latest -f
+    - run: rm data.zip
+
+  build-on-local:
+
+    runs-on: ubuntu-22.04
+
+    steps:
+    - uses: actions/checkout@v4
+    - run: ./local
+    - run: rm data.zip
